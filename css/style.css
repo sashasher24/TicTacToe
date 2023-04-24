@@ -1,0 +1,103 @@
+body {
+    font-family: 'Lilita One', cursive;
+}
+
+#container {
+    margin: 0 auto;
+    width: max-content;
+}
+
+.gameContainer {
+    background: #303030;
+    height: 900px;
+    width: 1100px;
+}
+
+.gameSpace {
+    display: flex;
+}
+
+#heading {
+    height: 50px;
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+}
+
+#gameDiv {
+    height: 800px;
+    width: 800px;
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-areas: "square0 square1 square2" "square3 square4 square5" "square6 square7 square8";
+}
+
+[id*=square] {
+    height: 90%;
+    width: 90%;
+    background: #c2c2c2;
+    box-shadow: 0 5px 0 #9b9b9b, 0 10px 0 #cf9139, 5px 10px 0 #cf9139;
+    font-size: 100px;
+    text-align: center;
+    line-height: 210px;
+}
+
+#sideBar {
+    background: #c2c2c2;
+    height: 700px;
+    width: 200px;
+    margin-top: 60px;
+    margin-left: -30px;
+    position: relative;
+}
+
+.green {
+    color: #2f7731;
+}
+
+[id*=player] {
+    height: 20px;
+    width: 150px;
+    color: black !important;
+    background: #d4d4d4;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#player1 {
+    background: #cf9139;
+}
+
+#turnsTable {
+    text-align: center;
+    margin: 0 auto;
+    height: 150px;
+    font-size: 20px;
+}
+
+#resultMessage {
+    text-align: center;
+    font-size: 45px;
+}
+
+#playAgain {
+    position: absolute;
+    left: 27px;
+    bottom: 25px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    background: #3e3e3e;
+    color: white;
+    line-height: 40px;
+}
+
+#playAgain:hover {
+    cursor: pointer;
+}
